@@ -1,0 +1,12 @@
+<div class="d-flex justify-content-center">
+  <h1>{{title}}</h1>
+</div>
+<hr>
+<div class="row">
+  <div class="col-md-6">
+    <dbz-list [characterList]="characters" (emiter)="deleteCharacter($event)"></dbz-list>
+  </div>
+  <div class="col-md-6">
+    <dbz-add-character (onNewCharacter)="onNewCharacter($event)"></dbz-add-character>
+  </div>
+</div>
